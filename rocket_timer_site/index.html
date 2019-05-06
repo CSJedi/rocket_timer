@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="./img/icon48.png">
+  <title>
+    RLE• Rocket launch extension
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="./css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./css/rle-design-system.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/request.js"></script>
+</head>
+<body class="index-page" onload="request();">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#main" rel="tooltip" title="Designed and Coded by Tetiana Zhydeikina" data-placement="bottom">
+          <span>RLE•</span> Rocket launch extension
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+                RLE•
+              </a>
+            </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item p-0">
+            <a href="#info" class="dropdown-item">
+                <i class="tim-icons icon-image-02"></i>Info about  project
+              </a>
+          </li>
+          <li class="nav-item p-1">
+            <a href="#list" class="dropdown-item">
+                <i class="tim-icons icon-bullet-list-67"></i>List of launches
+              </a>
+          </li>
+          <li class="nav-item p-1">
+             <a href="#contacts" class="dropdown-item">
+                <i class="tim-icons icon-single-02"></i>Contacts
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper" style="background:url('img/background.gif') no-repeat center center; background-size: cover;" id="main">
+    <div class="page-header header-filter">
+      <div class="container">
+        <div class="content-center brand">
+          <h1 class="h1-seo"  style="margin-bottom: 150px;">RLE</h1>
+          <h3 style="color: #7e7fb4; margin-bottom: 130px;">Extension that shows the time to the shuttle launch. With Rocket timer, you can follow the launch of the shuttle online.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main"> 
+      <img src="img/path1.png" class="path">
+      <div class="section" id="list">
+        <img src="img/path1.png" class="path">
+        <div class="container">
+            <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators" id="indicators">
+              </ol>
+              <!--/.Indicators-->
+              <div class="carousel-inner" role="listbox" id="launches">
+                
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="section section-download" data-background-color="black" id="info">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="text-center col-md-12 col-lg-8">
+              <h2 class="title">Do you want to know when will be next rocket launch?</h2>
+              <h4 class="description">Imagine being able to see all rocket launches in one timeline. All planned launches of the future. And all launches of the past. Now you can do this with RLE Rocket launch extension. You can watch the evolution of rockets happening in your life going from an ultra-expensive technology to mass transit to our future Martian colony.</h4>
+            </div>
+            <div class="text-center col-md-12 col-lg-8">
+              <a href="https://chrome.google.com/webstore/detail/rocket-timer/oojjeochbiicppaaldclldpcjgiieijo" target="_blank" class="btn btn-primary btn-round btn-lg" role="button">
+                Download extension
+              </a>
+            </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="row row-grid align-items-center my-md">
+            <div class="col-lg-6 text-lg-center btn-wrapper">
+              <h3 class="text-primary font-weight-light mb-2">Made by Tetiana Zhydeikina.</h3>
+              <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms!</h4>
+            </div>
+            <div class="col-lg-6 text-lg-center btn-wrapper">
+              <a id="facebook" href="https://www.facebook.com/zhydeikina" target="_blank" class="btn btn-icon btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Share!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a target="_blank" href="https://github.com/CSJedi" target="_blank" class="btn btn-icon btn-github btn-round btn-lg" data-toggle="tooltip" data-original-title="Star on Github">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

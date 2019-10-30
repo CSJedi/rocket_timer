@@ -90,6 +90,8 @@ var loadLaunches = function(id)
             while (rocket_list.firstChild) {
                 rocket_list.removeChild(rocket_list.firstChild);
             }
+
+
             for(var y = start; y < end; y++)
             {
                     var li = document.createElement("li");
